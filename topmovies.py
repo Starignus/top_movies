@@ -1,11 +1,22 @@
 #! /usr/bin/env python
 import bs4
 import json
+import urlparse
+import os
+import requests
+import codecs
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 class Person(object):
   """
   Class to define aperson in a movie
   """
+  logger = logging.getLogger("Person")
+
+  HTML_DIR = os.path.join(os.path.dirname(__file__), "persons")
+
   def __init__(self, soup):
     """
     :param soup: beautiful soup object with the link for a single person
@@ -25,6 +36,28 @@ class Person(object):
     """
     return {'name': self.name, 'url': self.url}
 
+  @property
+  def local_path(self):
+    """
+     Name of html for each person
+    :return: local path + filename.htm
+    """
+    path_parts = urlparse.urlsplit(self.url).path.split("/")
+    assert path_parts[0] == '' and path_parts[1] == 'name'
+    filename = path_parts[2] + ".html"
+    return os.path.join(self.HTML_DIR, filename)
+
+  def download_html(self):
+    """
+    Method to download html file for each person
+    """
+    if not os.path.exists(self.HTML_DIR):
+      os.makedirs(self.HTML_DIR)
+    if not os.path.exists(self.local_path):
+      self.logger.info("Downloading %s", self.name)
+      with codecs.open(self.local_path, 'w', encoding='utf-8') as f:
+        r = requests.get(self.url)
+        f.write(r.text)
 
 class Movie(object):
   """
@@ -62,6 +95,15 @@ class Movie(object):
     return {'title': self.title, 'url': self.url, 'genre': self.genre, 'rating': self.rating,
             'directors': [p.to_json() for p in self.directors], 'stars': [p.to_json() for p in self.stars]}
 
+  def download_htmls(self):
+    """
+    Method to download html for each director and star
+    """
+    for person in self.directors:
+      person.download_html()
+    for person in self.stars:
+      person.download_html()
+
 
 class MovieCollection(object):
   """
@@ -90,10 +132,23 @@ class MovieCollection(object):
     with open(filename, 'w') as f:
       json.dump(self.to_json(), f, sort_keys=True, indent=4, separators=(",", ": "))
 
+  def __iter__(self):
+      return iter(self._movies)
+
+  def download_htmls(self):
+    """
+    Method to download all the htmls of all the persons in all the movies
+    """
+    for movie in self:
+      movie.download_htmls()
 
 def main():
   movies = MovieCollection('top_movies_2016.html')
-  movies.save_to_json('movies_collection2016.json')
+  # movies.save_to_json('movies_collection2016.json')
+  #person = next(iter(movies)).directors[0]
+  #print person.url
+  #person.download_html()
+  movies.download_htmls()
 
 if __name__ == '__main__':
   main()
