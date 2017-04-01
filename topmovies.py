@@ -64,7 +64,6 @@ class Person(object):
     with open(self.local_path) as f:
       soup = bs4.BeautifulSoup(f, 'html.parser')
     description = soup.find(id="name-bio-text")
-    print description
     description = description.find(itemprop="description")
     if description:
       description = description.get_text()
@@ -72,7 +71,18 @@ class Person(object):
       description = ""
     return description
 
+  def job_titles(self):
+    with open(self.local_path) as f:
+      soup = bs4.BeautifulSoup(f, 'html.parser')
+    titles = soup.find(id="name-job-categories").find_all(itemprop="jobTitle")
+    titles = [title.string.strip().lower() for title in titles]
+    return titles
+
   def gender(self):
+    if 'actress' in self.job_titles():
+      return 'female'
+    if 'actor' in self.job_titles():
+      return 'male'
     words = re.findall(r"\w+", self.person_description().lower())
     for word in words:
       if word in ['she', 'her', 'actress']:
@@ -168,7 +178,7 @@ def main():
   movies = MovieCollection('top_movies_2016.html')
   # movies.save_to_json('movies_collection2016.json')
   #person = next(iter(movies)).directors[0]
-  persons = movies._movies[2].stars
+  persons = movies._movies[6].stars
   for person in persons:
     print person.name
     print person.gender()
