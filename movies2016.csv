@@ -1,0 +1,261 @@
+,movie,role,name,gender,id
+0,Moonlight,star,Mahershala Ali,male,nm0991810
+1,Moonlight,star,Shariff Earp,male,nm8401402
+2,Moonlight,star,Duan Sanderson,male,nm5429086
+3,Moonlight,star,Alex R. Hibbert,male,nm7683379
+4,Moonlight,director,Barry Jenkins,male,nm1503575
+5,Sing,star,Matthew McConaughey,male,nm0000190
+6,Sing,star,Reese Witherspoon,female,nm0000702
+7,Sing,star,Seth MacFarlane,male,nm0532235
+8,Sing,star,Scarlett Johansson,female,nm0424060
+9,Sing,director,Christophe Lourdelet,unknown,nm2888554
+10,Sing,director,Garth Jennings,male,nm1134029
+11,X-Men: Apocalypse,star,James McAvoy,male,nm0564215
+12,X-Men: Apocalypse,star,Michael Fassbender,male,nm1055413
+13,X-Men: Apocalypse,star,Jennifer Lawrence,female,nm2225369
+14,X-Men: Apocalypse,star,Nicholas Hoult,male,nm0396558
+15,X-Men: Apocalypse,director,Bryan Singer,male,nm0001741
+16,Moana,star,Auli'i Cravalho,female,nm7635388
+17,Moana,star,Dwayne Johnson,male,nm0425005
+18,Moana,star,Rachel House,female,nm1344302
+19,Moana,star,Temuera Morrison,male,nm0607325
+20,Moana,director,Ron Clements,male,nm0166256
+21,Moana,director,Don Hall,male,nm2320658
+22,Moana,director,John Musker,male,nm0615780
+23,Moana,director,Chris Williams,male,nm0930261
+24,Hacksaw Ridge,star,Andrew Garfield,male,nm1940449
+25,Hacksaw Ridge,star,Sam Worthington,male,nm0941777
+26,Hacksaw Ridge,star,Luke Bracey,male,nm3478396
+27,Hacksaw Ridge,star,Teresa Palmer,female,nm1954240
+28,Hacksaw Ridge,director,Mel Gibson,male,nm0000154
+29,La La Land,star,Ryan Gosling,male,nm0331516
+30,La La Land,star,Emma Stone,female,nm1297015
+31,La La Land,star,Rosemarie DeWitt,female,nm1679669
+32,La La Land,star,J.K. Simmons,male,nm0799777
+33,La La Land,director,Damien Chazelle,male,nm3227090
+34,Manchester by the Sea,star,Casey Affleck,male,nm0000729
+35,Manchester by the Sea,star,Michelle Williams,female,nm0931329
+36,Manchester by the Sea,star,Kyle Chandler,male,nm0151419
+37,Manchester by the Sea,star,Lucas Hedges,male,nm2348627
+38,Manchester by the Sea,director,Kenneth Lonergan,male,nm0518836
+39,Arrival,star,Amy Adams,female,nm0010736
+40,Arrival,star,Jeremy Renner,male,nm0719637
+41,Arrival,star,Forest Whitaker,male,nm0001845
+42,Arrival,star,Michael Stuhlbarg,male,nm0836121
+43,Arrival,director,Denis Villeneuve,male,nm0898288
+44,Trolls,star,Anna Kendrick,female,nm0447695
+45,Trolls,star,Justin Timberlake,male,nm0005493
+46,Trolls,star,Zooey Deschanel,female,nm0221046
+47,Trolls,star,Christopher Mintz-Plasse,male,nm2395586
+48,Trolls,director,Walt Dohrn,male,nm0230666
+49,Trolls,director,Mike Mitchell,male,nm0593610
+50,Passengers,star,Jennifer Lawrence,female,nm2225369
+51,Passengers,star,Chris Pratt,male,nm0695435
+52,Passengers,star,Michael Sheen,male,nm0790688
+53,Passengers,star,Laurence Fishburne,male,nm0000401
+54,Passengers,director,Morten Tyldum,male,nm0878763
+55,Split,star,James McAvoy,male,nm0564215
+56,Split,star,Anya Taylor-Joy,female,nm5896355
+57,Split,star,Haley Lu Richardson,female,nm4726634
+58,Split,star,Jessica Sula,female,nm4088627
+59,Split,director,M. Night Shyamalan,male,nm0796117
+60,Doctor Strange,star,Benedict Cumberbatch,male,nm1212722
+61,Doctor Strange,star,Chiwetel Ejiofor,male,nm0252230
+62,Doctor Strange,star,Rachel McAdams,female,nm1046097
+63,Doctor Strange,star,Benedict Wong,male,nm0938950
+64,Doctor Strange,director,Scott Derrickson,male,nm0220600
+65,Lion,star,Dev Patel,male,nm2353862
+66,Lion,star,Nicole Kidman,female,nm0000173
+67,Lion,star,Rooney Mara,female,nm1913734
+68,Lion,star,Sunny Pawar,male,nm8061218
+69,Lion,director,Garth Davis,male,nm0204628
+70,Fantastic Beasts and Where to Find Them,star,Eddie Redmayne,male,nm1519666
+71,Fantastic Beasts and Where to Find Them,star,Katherine Waterston,female,nm2239702
+72,Fantastic Beasts and Where to Find Them,star,Alison Sudol,female,nm0837223
+73,Fantastic Beasts and Where to Find Them,star,Dan Fogler,male,nm0283945
+74,Fantastic Beasts and Where to Find Them,director,David Yates,male,nm0946734
+75,The Promise,star,Oscar Isaac,male,nm1209966
+76,The Promise,star,Christian Bale,male,nm0000288
+77,The Promise,star,Shohreh Aghdashloo,female,nm0013037
+78,The Promise,star,Angela Sarafyan,female,nm1494168
+79,The Promise,director,Terry George,male,nm0313623
+80,Nocturnal Animals,star,Amy Adams,female,nm0010736
+81,Nocturnal Animals,star,Jake Gyllenhaal,male,nm0350453
+82,Nocturnal Animals,star,Michael Shannon,male,nm0788335
+83,Nocturnal Animals,star,Aaron Taylor-Johnson,male,nm1093951
+84,Nocturnal Animals,director,Tom Ford,male,nm1053530
+85,The Assignment,star,Michelle Rodriguez,female,nm0735442
+86,The Assignment,star,Sigourney Weaver,female,nm0000244
+87,The Assignment,star,Caitlin Gerard,female,nm3312826
+88,The Assignment,star,Tony Shalhoub,male,nm0001724
+89,The Assignment,director,Walter Hill,male,nm0001353
+90,Hidden Figures,star,Taraji P. Henson,female,nm0378245
+91,Hidden Figures,star,Octavia Spencer,female,nm0818055
+92,Hidden Figures,star,Janelle Monáe,female,nm1847117
+93,Hidden Figures,star,Kevin Costner,male,nm0000126
+94,Hidden Figures,director,Theodore Melfi,male,nm0577647
+95,Fallen,star,Hermione Corfield,female,nm5795508
+96,Fallen,star,Addison Timlin,female,nm1789970
+97,Fallen,star,Joely Richardson,female,nm0000613
+98,Fallen,star,Lola Kirke,female,nm3860305
+99,Fallen,director,Scott Hicks,male,nm0382956
+100,Sausage Party,star,Seth Rogen,male,nm0736622
+101,Sausage Party,star,Kristen Wiig,female,nm1325419
+102,Sausage Party,star,Jonah Hill,male,nm1706767
+103,Sausage Party,star,Alistair Abell,male,nm0008533
+104,Sausage Party,director,Greg Tiernan,male,nm0862911
+105,Sausage Party,director,Conrad Vernon,male,nm0970447
+106,Deadpool,star,Ryan Reynolds,male,nm0005351
+107,Deadpool,star,Morena Baccarin,female,nm1072555
+108,Deadpool,star,T.J. Miller,male,nm2554352
+109,Deadpool,star,Ed Skrein,male,nm4534098
+110,Deadpool,director,Tim Miller,male,nm1783265
+111,Fences,star,Denzel Washington,male,nm0000243
+112,Fences,star,Viola Davis,female,nm0205626
+113,Fences,star,Stephen Henderson,male,nm0376610
+114,Fences,star,Jovan Adepo,male,nm5381254
+115,Fences,director,Denzel Washington,male,nm0000243
+116,Allied,star,Brad Pitt,male,nm0000093
+117,Allied,star,Marion Cotillard,female,nm0182839
+118,Allied,star,Jared Harris,male,nm0364813
+119,Allied,star,Vincent Ebrahim,male,nm1081121
+120,Allied,director,Robert Zemeckis,male,nm0000709
+121,Collateral Beauty,star,Will Smith,male,nm0000226
+122,Collateral Beauty,star,Edward Norton,male,nm0001570
+123,Collateral Beauty,star,Kate Winslet,female,nm0000701
+124,Collateral Beauty,star,Michael Peña,male,nm0671567
+125,Collateral Beauty,director,David Frankel,male,nm0291205
+126,Assassin's Creed,star,Michael Fassbender,male,nm1055413
+127,Assassin's Creed,star,Marion Cotillard,female,nm0182839
+128,Assassin's Creed,star,Jeremy Irons,male,nm0000460
+129,Assassin's Creed,star,Brendan Gleeson,male,nm0322407
+130,Assassin's Creed,director,Justin Kurzel,male,nm2355933
+131,Suicide Squad,star,Will Smith,male,nm0000226
+132,Suicide Squad,star,Jared Leto,male,nm0001467
+133,Suicide Squad,star,Margot Robbie,female,nm3053338
+134,Suicide Squad,star,Viola Davis,female,nm0205626
+135,Suicide Squad,director,David Ayer,male,nm0043742
+136,Raw,star,Garance Marillier,female,nm4469165
+137,Raw,star,Ella Rumpf,female,nm5050688
+138,Raw,star,Rabah Nait Oufella,male,nm3274096
+139,Raw,star,Laurent Lucas,male,nm0524217
+140,Raw,director,Julia Ducournau,female,nm4469445
+141,The Great Wall,star,Matt Damon,male,nm0000354
+142,The Great Wall,star,Tian Jing,female,nm1320897
+143,The Great Wall,star,Willem Dafoe,male,nm0000353
+144,The Great Wall,star,Andy Lau,male,nm0490489
+145,The Great Wall,director,Yimou Zhang,male,nm0955443
+146,Live by Night,star,Ben Affleck,male,nm0000255
+147,Live by Night,star,Elle Fanning,female,nm1102577
+148,Live by Night,star,Brendan Gleeson,male,nm0322407
+149,Live by Night,star,Chris Messina,male,nm0582149
+150,Live by Night,director,Ben Affleck,male,nm0000255
+151,Miss Sloane,star,Jessica Chastain,female,nm1567113
+152,Miss Sloane,star,Mark Strong,male,nm0835016
+153,Miss Sloane,star,Gugu Mbatha-Raw,female,nm1813221
+154,Miss Sloane,star,Michael Stuhlbarg,male,nm0836121
+155,Miss Sloane,director,John Madden,male,nm0006960
+156,Carrie Pilby,star,Bel Powley,female,nm2525790
+157,Carrie Pilby,star,Nathan Lane,male,nm0001447
+158,Carrie Pilby,star,Gabriel Byrne,male,nm0000321
+159,Carrie Pilby,star,Vanessa Bayer,female,nm3364779
+160,Carrie Pilby,director,Susan Johnson,female,nm0426287
+161,The Girl on the Train,star,Emily Blunt,female,nm1289434
+162,The Girl on the Train,star,Haley Bennett,female,nm2247245
+163,The Girl on the Train,star,Rebecca Ferguson,female,nm0272581
+164,The Girl on the Train,star,Justin Theroux,male,nm0857620
+165,The Girl on the Train,director,Tate Taylor,male,nm0853238
+166,Silence,star,Andrew Garfield,male,nm1940449
+167,Silence,star,Adam Driver,male,nm3485845
+168,Silence,star,Liam Neeson,male,nm0000553
+169,Silence,star,Tadanobu Asano,male,nm0038355
+170,Silence,director,Martin Scorsese,male,nm0000217
+171,Mike and Dave Need Wedding Dates,star,Zac Efron,male,nm1374980
+172,Mike and Dave Need Wedding Dates,star,Adam Devine,male,nm2796745
+173,Mike and Dave Need Wedding Dates,star,Anna Kendrick,female,nm0447695
+174,Mike and Dave Need Wedding Dates,star,Aubrey Plaza,female,nm2201555
+175,Mike and Dave Need Wedding Dates,director,Jake Szymanski,unknown,nm2021516
+176,Headshot,star,Ario Bayu,male,nm2523085
+177,Headshot,star,Ganindra Bimo,male,nm5996118
+178,Headshot,star,Julie Estelle,female,nm2438707
+179,Headshot,star,Egy Fedly,male,nm3029960
+180,Headshot,director,Kimo Stamboel,unknown,nm3125415
+181,Headshot,director,Timo Tjahjanto,unknown,nm3464186
+182,The Accountant,star,Ben Affleck,male,nm0000255
+183,The Accountant,star,Anna Kendrick,female,nm0447695
+184,The Accountant,star,J.K. Simmons,male,nm0799777
+185,The Accountant,star,Jon Bernthal,male,nm1256532
+186,The Accountant,director,Gavin O'Connor,male,nm0640334
+187,Captain Fantastic,star,Viggo Mortensen,male,nm0001557
+188,Captain Fantastic,star,George MacKay,male,nm1126657
+189,Captain Fantastic,star,Samantha Isler,female,nm4705966
+190,Captain Fantastic,star,Annalise Basso,female,nm2399383
+191,Captain Fantastic,director,Matt Ross,male,nm0743671
+192,Jackie,star,Natalie Portman,female,nm0000204
+193,Jackie,star,Peter Sarsgaard,male,nm0765597
+194,Jackie,star,Greta Gerwig,female,nm1950086
+195,Jackie,star,Billy Crudup,male,nm0001082
+196,Jackie,director,Pablo Larraín,male,nm1883257
+197,A Cure for Wellness,star,Dane DeHaan,male,nm2851530
+198,A Cure for Wellness,star,Jason Isaacs,male,nm0005042
+199,A Cure for Wellness,star,Mia Goth,female,nm5301405
+200,A Cure for Wellness,star,Ivo Nandi,male,nm2166477
+201,A Cure for Wellness,director,Gore Verbinski,male,nm0893659
+202,Rogue One,star,Felicity Jones,female,nm0428065
+203,Rogue One,star,Diego Luna,male,nm0526019
+204,Rogue One,star,Alan Tudyk,male,nm0876138
+205,Rogue One,star,Donnie Yen,male,nm0947447
+206,Rogue One,director,Gareth Edwards,male,nm2284484
+207,Hell or High Water,star,Chris Pine,male,nm1517976
+208,Hell or High Water,star,Ben Foster,male,nm0004936
+209,Hell or High Water,star,Jeff Bridges,male,nm0000313
+210,Hell or High Water,star,Gil Birmingham,male,nm0083655
+211,Hell or High Water,director,David Mackenzie,male,nm0533284
+212,Zootopia,star,Ginnifer Goodwin,female,nm0329481
+213,Zootopia,star,Jason Bateman,male,nm0000867
+214,Zootopia,star,Idris Elba,male,nm0252961
+215,Zootopia,star,Jenny Slate,female,nm2809577
+216,Zootopia,director,Byron Howard,male,nm0397174
+217,Zootopia,director,Rich Moore,male,nm0601781
+218,Zootopia,director,Jared Bush,male,nm1158544
+219,Elle,star,Isabelle Huppert,female,nm0001376
+220,Elle,star,Laurent Lafitte,male,nm0480850
+221,Elle,star,Anne Consigny,female,nm0175931
+222,Elle,star,Charles Berling,male,nm0075650
+223,Elle,director,Paul Verhoeven,male,nm0000682
+224,The Belko Experiment,star,John Gallagher Jr.,male,nm0302330
+225,The Belko Experiment,star,Tony Goldwyn,male,nm0001282
+226,The Belko Experiment,star,Adria Arjona,female,nm5245722
+227,The Belko Experiment,star,John C. McGinley,male,nm0001525
+228,The Belko Experiment,director,Greg McLean,unknown,nm0572562
+229,10 Cloverfield Lane,star,John Goodman,male,nm0000422
+230,10 Cloverfield Lane,star,Mary Elizabeth Winstead,female,nm0935541
+231,10 Cloverfield Lane,star,John Gallagher Jr.,male,nm0302330
+232,10 Cloverfield Lane,star,Douglas M. Griffin,male,nm0341174
+233,10 Cloverfield Lane,director,Dan Trachtenberg,male,nm0870469
+234,Office Christmas Party,star,Jason Bateman,male,nm0000867
+235,Office Christmas Party,star,Olivia Munn,female,nm1601397
+236,Office Christmas Party,star,T.J. Miller,male,nm2554352
+237,Office Christmas Party,star,Jennifer Aniston,female,nm0000098
+238,Office Christmas Party,director,Josh Gordon,unknown,nm0330347
+239,Office Christmas Party,director,Will Speck,unknown,nm0817447
+240,Resident Evil: The Final Chapter,star,Milla Jovovich,female,nm0000170
+241,Resident Evil: The Final Chapter,star,Iain Glen,male,nm0322513
+242,Resident Evil: The Final Chapter,star,Ali Larter,female,nm0005123
+243,Resident Evil: The Final Chapter,star,Shawn Roberts,male,nm0731575
+244,Resident Evil: The Final Chapter,director,Paul W.S. Anderson,male,nm0027271
+245,The Edge of Seventeen,star,Hailee Steinfeld,female,nm2794962
+246,The Edge of Seventeen,star,Haley Lu Richardson,female,nm4726634
+247,The Edge of Seventeen,star,Blake Jenner,male,nm4296357
+248,The Edge of Seventeen,star,Kyra Sedgwick,female,nm0001718
+249,The Edge of Seventeen,director,Kelly Fremon Craig,unknown,nm2609807
+250,The Magnificent Seven,star,Denzel Washington,male,nm0000243
+251,The Magnificent Seven,star,Chris Pratt,male,nm0695435
+252,The Magnificent Seven,star,Ethan Hawke,male,nm0000160
+253,The Magnificent Seven,star,Vincent D'Onofrio,male,nm0000352
+254,The Magnificent Seven,director,Antoine Fuqua,male,nm0298807
+255,Norman,star,Richard Gere,male,nm0000152
+256,Norman,star,Lior Ashkenazi,male,nm0038988
+257,Norman,star,Michael Sheen,male,nm0790688
+258,Norman,star,Charlotte Gainsbourg,female,nm0001250
+259,Norman,director,Joseph Cedar,male,nm0147737

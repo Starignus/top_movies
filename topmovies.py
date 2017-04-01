@@ -7,6 +7,7 @@ import requests
 import codecs
 import logging
 import re
+import pandas as pd
 
 logging.basicConfig(level=logging.INFO)
 
@@ -45,10 +46,13 @@ class Person(object):
          Name of html for each person
         :return: local path + filename.htm
         """
+        return os.path.join(self.HTML_DIR, self.imdb_id + ".html")
+
+    @property
+    def imdb_id(self):
         path_parts = urlparse.urlsplit(self.url).path.split("/")
         assert path_parts[0] == '' and path_parts[1] == 'name'
-        filename = path_parts[2] + ".html"
-        return os.path.join(self.HTML_DIR, filename)
+        return path_parts[2]
 
     def download_html(self):
         """
@@ -63,6 +67,10 @@ class Person(object):
                 f.write(r.text)
 
     def _get_person_soup(self):
+        """
+        Get soup of the person page
+        :return: html soup
+        """
         if self._soup is None:
             self.download_html()
             with open(self.local_path) as f:
@@ -71,6 +79,10 @@ class Person(object):
 
     @property
     def description(self):
+        """
+        Description of the person
+        :return: string with personal info
+        """
         soup = self._get_person_soup()
         description = soup.find(id="name-bio-text")
         description = description.find(itemprop="description")
@@ -81,6 +93,10 @@ class Person(object):
         return description
 
     def job_titles(self):
+        """
+        Gets information of the person's job titles
+        :return: list of the person's job titles
+        """
         soup = self._get_person_soup()
         titles = soup.find(id="name-job-categories").find_all(itemprop="jobTitle")
         titles = [title.string.strip().lower() for title in titles]
@@ -88,6 +104,10 @@ class Person(object):
 
     @property
     def gender(self):
+        """
+        Guess the gender of the person analysing their job title or personal info
+        :return: string female, male or unknown 
+        """
         titles = self.job_titles()
         if 'actress' in titles:
             return 'female'
@@ -148,6 +168,19 @@ class Movie(object):
         for person in self.stars:
             person.download_html()
 
+    def data_frame(self):
+        """
+        Creating data frame of the movie
+        :return: Data frame with info of actors and actresses in the movie 
+        """
+        def iter_rows():
+            for person in self.stars:
+                yield (self.title, 'star', person.name, person.gender, person.imdb_id)
+            for person in self.directors:
+                yield (self.title, 'director', person.name, person.gender, person.imdb_id)
+
+        return pd.DataFrame.from_records(iter_rows(), columns=['movie', 'role', 'name', 'gender', 'id'])
+
 
 class MovieCollection(object):
     """
@@ -187,18 +220,28 @@ class MovieCollection(object):
         for movie in self:
             movie.download_htmls()
 
+    def data_frame(self):
+        """
+        Creating a data frame of all the movies
+        :return: Data frame of all the movies
+        """
+        frames = [movie.data_frame() for movie in self._movies]
+        return pd.concat(frames, ignore_index=True)
 
 def main():
     movies = MovieCollection('top_movies_2016.html')
+    movies.data_frame().to_csv('movies2016.csv', encoding='utf-8')
+    # df = movies._movies[0].data_frame()
+    # print df
     # movies.save_to_json('movies_collection2016.json')
     # person = next(iter(movies)).directors[0]
-    persons = movies._movies[6].stars
-    for person in persons:
-        print person.name
-        print person.gender
-        print
-        # person.download_html()
-        # movies.download_htmls()
+    # persons = movies._movies[6].stars
+    # for person in persons:
+    #     print person.name
+    #     print person.gender
+    #     print
+    # person.download_html()
+    # movies.download_htmls()
 
 
 if __name__ == '__main__':
