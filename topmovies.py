@@ -6,6 +6,7 @@ import os
 import requests
 import codecs
 import logging
+import re
 
 logging.basicConfig(level=logging.INFO)
 
@@ -58,6 +59,27 @@ class Person(object):
       with codecs.open(self.local_path, 'w', encoding='utf-8') as f:
         r = requests.get(self.url)
         f.write(r.text)
+
+  def person_description(self):
+    with open(self.local_path) as f:
+      soup = bs4.BeautifulSoup(f, 'html.parser')
+    description = soup.find(id="name-bio-text")
+    print description
+    description = description.find(itemprop="description")
+    if description:
+      description = description.get_text()
+    else:
+      description = ""
+    return description
+
+  def gender(self):
+    words = re.findall(r"\w+", self.person_description().lower())
+    for word in words:
+      if word in ['she', 'her', 'actress']:
+        return 'female'
+      if word in ['he', 'his', 'him', 'actor']:
+        return 'male'
+    return 'unknown'
 
 class Movie(object):
   """
@@ -146,9 +168,13 @@ def main():
   movies = MovieCollection('top_movies_2016.html')
   # movies.save_to_json('movies_collection2016.json')
   #person = next(iter(movies)).directors[0]
-  #print person.url
+  persons = movies._movies[2].stars
+  for person in persons:
+    print person.name
+    print person.gender()
+    print
   #person.download_html()
-  movies.download_htmls()
+  #movies.download_htmls()
 
 if __name__ == '__main__':
   main()
